@@ -1,2 +1,2 @@
-# leaflet-simple-button
+# Leaflet.Control.SimpleButton
 leaflet-simple-button
