@@ -31,7 +31,7 @@
 })(function (L) {
     "use strict";
 
-    let control = L.Control.extend({
+    const control = L.Control.extend({
         options: {
             className: "",
             html: "&nbsp;",
