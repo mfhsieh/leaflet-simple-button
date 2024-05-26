@@ -49,7 +49,7 @@
 
             this._button = L.DomUtil.create("button", "leaflet-simple-button");
             if (this.options.className) L.DomUtil.addClass(this._button, this.options.className);
-            // L.DomEvent.disableClickPropagation(this._button);
+            L.DomEvent.disableClickPropagation(this._button);
 
             this._button.innerHTML = this.options.html;
             this._button.title = this.options.title;
