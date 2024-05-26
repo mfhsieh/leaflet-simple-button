@@ -1,2 +1,2 @@
 # Leaflet.Control.SimpleButton
-leaflet-simple-button
+Please refer to the [example](https://mfhsieh.github.io/leaflet-simple-button/) (including [index.html](https://github.com/mfhsieh/leaflet-simple-button/blob/main/index.html) and [examples/demo.css](https://github.com/mfhsieh/leaflet-simple-button/blob/main/examples/demo.css)).
