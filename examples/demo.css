@@ -23,14 +23,14 @@
     height: 2.5rem;
     padding: 0;
     margin: 0;
-    font-size: 1.25rem;
+    font-size: 1.375rem;
     color: rgba(var(--primary-rgb), 1);
     background-color: rgba(255, 255, 255, 1) !important;
     border: .125rem solid rgba(var(--primary-rgb), 1) !important;
     border-radius: 2.5rem;
     box-shadow: rgba(0, 0, 0, .33) 0 .125rem .375rem;
-    opacity: .5;
-    transition: opacity .2s;
+    /* opacity: .5;
+    transition: opacity .2s; */
     cursor: pointer;
     user-select: none;
     -webkit-user-select: none;
@@ -41,14 +41,14 @@
 
 .leaflet-simple-button svg {
     fill: rgba(var(--primary-rgb), 1);
-    width: 1.25rem;
-    height: 1.25rem;
+    width: 1.375rem;
+    height: 1.375rem;
 }
 
-.leaflet-simple-button:hover,
+/* .leaflet-simple-button:hover,
 .leaflet-simple-button:active {
     opacity: 1;
-}
+} */
 
 .leaflet-simple-button:active {
     color: white;
@@ -78,20 +78,20 @@
 .leaflet-simple-button.button-2 {
     position: absolute;
     margin: 0 !important;
-    left: 3rem;
+    left: 3.5rem;
     top: .5rem;
 }
 
 .leaflet-simple-button.button-3 {
     position: absolute;
     margin: 0 !important;
-    left: 5.5rem;
+    left: 6.5rem;
     top: .5rem;
 }
 
 .leaflet-simple-button.button-4 {
     position: absolute;
     margin: 0 !important;
-    left: 8rem;
+    left: 9.5rem;
     top: .5rem;
 }
