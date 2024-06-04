@@ -13,6 +13,15 @@
  * git@github.com:mfhsieh/leaflet-simple-button.git 
  * 
  */
+@-moz-document url-prefix() {
+
+    .leaflet-simple-button .fa,
+    .leaflet-simple-button .fas {
+        margin-top: .05rem;
+        margin-bottom: -.05rem;
+    }
+}
+
 .leaflet-simple-button {
     display: flex;
     align-items: center;
@@ -37,6 +46,10 @@
     -moz-user-select: none;
     -ms-user-select: none;
     -khtml-user-select: none;
+    text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
 }
 
 .leaflet-simple-button svg {
