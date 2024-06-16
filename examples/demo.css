@@ -16,6 +16,7 @@
 @-moz-document url-prefix() {
 
     .leaflet-simple-button .fa,
+    .leaflet-simple-button .fab,
     .leaflet-simple-button .far,
     .leaflet-simple-button .fas {
         margin-top: .05rem;
