@@ -1,21 +1,22 @@
-/* 
- * Leaflet Control SimpleButton v0.1 - 2024-05-24 
- * 
+/*
+ * Leaflet.SimpleButton v1.0.0 - 2024-06-15
+ *
  * Copyright 2024 mfhsieh
- * mfhsieh@gmail.com 
- * 
- * Licensed under the MIT license. 
- * 
- * Demos: 
+ * mfhsieh@gmail.com
+ *
+ * Licensed under the MIT license.
+ *
+ * Demos:
  * https://mfhsieh.github.io/leaflet-simple-button/
- * 
- * Source: 
- * git@github.com:mfhsieh/leaflet-simple-button.git 
- * 
+ *
+ * Source:
+ * git@github.com:mfhsieh/leaflet-simple-button.git
+ *
  */
 @-moz-document url-prefix() {
 
     .leaflet-simple-button .fa,
+    .leaflet-simple-button .far,
     .leaflet-simple-button .fas {
         margin-top: .05rem;
         margin-bottom: -.05rem;
@@ -80,32 +81,4 @@
 
 .leaflet-simple-button:focus-visible {
     border: .125rem solid rgba(0, 0, 0, 1);
-}
-
-.leaflet-simple-button.button-1 {
-    position: absolute;
-    margin: 0 !important;
-    left: .5rem;
-    top: .5rem;
-}
-
-.leaflet-simple-button.button-2 {
-    position: absolute;
-    margin: 0 !important;
-    left: 3.5rem;
-    top: .5rem;
-}
-
-.leaflet-simple-button.button-3 {
-    position: absolute;
-    margin: 0 !important;
-    left: 6.5rem;
-    top: .5rem;
-}
-
-.leaflet-simple-button.button-4 {
-    position: absolute;
-    margin: 0 !important;
-    left: 9.5rem;
-    top: .5rem;
 }

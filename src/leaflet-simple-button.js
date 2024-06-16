@@ -1,17 +1,17 @@
-/* 
- * Leaflet Control SimpleButton v0.1 - 2024-05-24 
- * 
+/*
+ * Leaflet.SimpleButton v1.0.0 - 2024-06-15
+ *
  * Copyright 2024 mfhsieh
- * mfhsieh@gmail.com 
- * 
- * Licensed under the MIT license. 
- * 
- * Demos: 
+ * mfhsieh@gmail.com
+ *
+ * Licensed under the MIT license.
+ *
+ * Demos:
  * https://mfhsieh.github.io/leaflet-simple-button/
- * 
- * Source: 
- * git@github.com:mfhsieh/leaflet-simple-button.git 
- * 
+ *
+ * Source:
+ * git@github.com:mfhsieh/leaflet-simple-button.git
+ *
  */
 (function (factory) {
 
