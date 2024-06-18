@@ -1,5 +1,5 @@
 /*
- * Leaflet.SimpleButton v1.0.0 - 2024-06-15
+ * Leaflet.SimpleButton v1.0.1 - 2024-06-15
  *
  * Copyright 2024 mfhsieh
  * mfhsieh@gmail.com
@@ -31,7 +31,7 @@
 })(function (L) {
     "use strict";
 
-    const control = L.Control.extend({
+    const SimpleButton = L.Control.extend({
         options: {
             className: "",
             html: "&nbsp;",
@@ -66,5 +66,9 @@
         },
     });
 
-    return control;
+    L.control.simpleButton = function (options) {
+        return new SimpleButton(options);
+    }
+
+    return SimpleButton;
 });
