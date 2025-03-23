@@ -1,5 +1,5 @@
 /*
- * Leaflet.SimpleButton v1.0.1 - 2024-06-15
+ * Leaflet.SimpleButton v1.0.2 - 2025-3-23
  *
  * Copyright 2024 mfhsieh
  * mfhsieh@gmail.com
@@ -14,24 +14,37 @@
  *
  */
 (function (factory) {
+    if (typeof define === "function" && define.amd) {
+        // AMD module
+        define(["leaflet"], factory);
 
-    if (typeof define === 'function' && define.amd) {  // eslint-disable-line no-undef
-        // define an AMD module that relies on 'leaflet'
-        define(['leaflet'], factory);  // eslint-disable-line no-undef
+    } else if (typeof exports === "object") {
+        // CommonJS module
+        module.exports = factory(require("leaflet"));
 
-    } else if (typeof exports === 'object') {
-        // define a Common JS module that relies on 'leaflet'
-        module.exports = factory(require('leaflet'));  // eslint-disable-line no-undef
-
-    } else if (typeof window !== 'undefined') {
-        // attach your plugin to the global 'L' variable
+    } else if (typeof window !== "undefined") {
+        // Browser globals
         if (typeof window.L === "undefined") throw "Leaflet must be loaded first.";
         window.L.Control.SimpleButton = factory(window.L);
     }
 })(function (L) {
     "use strict";
 
+    /**
+     * @class SimpleButton
+     * @extends L.Control
+     * @classdesc A Leaflet control that creates a simple button.
+     * @param {Object} options - Control options.
+     */
     const SimpleButton = L.Control.extend({
+        /**
+         * @property {Object} options - Default options for the control.
+         * @property {string} options.className - Custom CSS class name for the button.
+         * @property {string} options.html - HTML content of the button.
+         * @property {string} options.title - Title attribute of the button.
+         * @property {string} options.ariaLabel - ARIA label for the button.
+         * @property {Function} options.afterClick - Callback function for click event.
+         */
         options: {
             className: "",
             html: "&nbsp;",
@@ -40,10 +53,23 @@
             afterClick: null,
         },
 
+        /**
+         * @function initialize
+         * @memberof SimpleButton.prototype
+         * @description Initializes the control with the given options.
+         * @param {Object} options - Control options.
+         */
         initialize: function (options) {
             L.Util.setOptions(this, options);
         },
 
+        /**
+         * @function onAdd
+         * @memberof SimpleButton.prototype
+         * @description Adds the control to the map.
+         * @param {L.Map} map - The Leaflet map instance.
+         * @returns {HTMLElement} The created button element.
+         */
         onAdd: function (map) {
             this._map = map;
 
@@ -66,6 +92,13 @@
         },
     });
 
+    /**
+     * @function simpleButton
+     * @memberof L.control
+     * @description Creates a new SimpleButton control.
+     * @param {Object} options - Control options.
+     * @returns {SimpleButton} A new SimpleButton control.
+     */
     L.control.simpleButton = function (options) {
         return new SimpleButton(options);
     }
