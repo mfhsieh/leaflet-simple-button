@@ -1,7 +1,7 @@
 /*
- * Leaflet.SimpleButton v1.0.2 - 2025-3-23
+ * Leaflet.SimpleButton v1.0.3 - 2026-02-28
  *
- * Copyright 2024 mfhsieh
+ * Copyright 2026 mfhsieh
  * mfhsieh@gmail.com
  *
  * Licensed under the MIT license.
