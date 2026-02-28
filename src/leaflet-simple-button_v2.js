@@ -17,18 +17,24 @@ import L from "leaflet";
 
 /**
  * @class SimpleButton
- * @extends L.Control
+ * @augments L.Control
  * @classdesc A Leaflet control that creates a simple button.
- * @param {Object} options - Control options.
  */
 const SimpleButton = L.Control.extend({
     /**
-     * @property {Object} options - Default options for the control.
-     * @property {string} options.className - Custom CSS class name for the button.
-     * @property {string} options.html - HTML content of the button.
-     * @property {string} options.title - Title attribute of the button.
-     * @property {string} options.ariaLabel - ARIA label for the button.
-     * @property {Function} options.afterClick - Callback function for click event.
+     * @typedef {Object} SimpleButtonOptions
+     * @description Default options for the control.
+     * 
+     * @property {string} [className=""] - Custom CSS class name for the button.
+     * @property {string} [html="&nbsp;"] - HTML content of the button.
+     * @property {string} [title="a simple button"] - Title attribute of the button.
+     * @property {string} [ariaLabel=""] - ARIA label for the button. If empty, the title will be used.
+     * @property {Function} [afterClick=null] - Callback function called after the button is clicked.
+     */
+
+    /**
+     * @type {SimpleButtonOptions}
+     * @description Default options for the control.
      */
     options: {
         className: "",
@@ -39,19 +45,19 @@ const SimpleButton = L.Control.extend({
     },
 
     /**
-     * @function initialize
+     * @method initialize
      * @memberof SimpleButton.prototype
      * @description Initializes the control with the given options.
-     * @param {Object} options - Control options.
+     * @param {SimpleButtonOptions} options - Configuration options for the control.
      */
     initialize: function (options) {
         L.Util.setOptions(this, options);
     },
 
     /**
-     * @function onAdd
+     * @method onAdd
      * @memberof SimpleButton.prototype
-     * @description Adds the control to the map.
+     * @description Adds the control to the map and creates the button element.
      * @param {L.Map} map - The Leaflet map instance.
      * @returns {HTMLElement} The created button element.
      */
@@ -78,11 +84,11 @@ const SimpleButton = L.Control.extend({
 });
 
 /**
- * Creates a new instance of the SimpleButton control.
+ * Creates a new SimpleButton instance.
  *
  * @function simpleButton
- * @param {Object} options The options for the SimpleButton control.
- * @returns {SimpleButton} A new instance of the SimpleButton control.
+ * @param {SimpleButtonOptions} options - Configuration options for the control.
+ * @returns {SimpleButton} A new SimpleButton instance.
  */
 export const simpleButton = function (options) {
     return new SimpleButton(options);

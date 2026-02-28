@@ -57,7 +57,7 @@ For more details, refer to the [Leaflet 1 demo](index.html) or [Leaflet 2 demo](
 | html | String | "&nbsp;" | HTML content of the button. |
 | title | String | "a simple button" | Title attribute of the button. |
 | ariaLabel | String | "" | ARIA label for the button. If empty, uses `title`. |
-| afterClick | Function | null | Callback function for the click event. |
+| afterClick | Function | null | Callback function called after the button is clicked. |
 
 ## Where
 
